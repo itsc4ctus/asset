@@ -22,14 +22,14 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
 @override
   void initState() {
-
+  final AssetController assetController = Get.put(AssetController());
+  Load().load();
   // TODO: implement initState
     super.initState();
   }
   @override
   Widget build(BuildContext context) {
-    final AssetController assetController = Get.put(AssetController());
-    Load().load();
+    final AssetController assetController = Get.find<AssetController>();
     TextEditingController hotFeildController = TextEditingController();
 
     return Scaffold(

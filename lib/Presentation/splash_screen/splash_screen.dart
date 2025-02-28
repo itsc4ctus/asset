@@ -18,19 +18,18 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    // Wait for 3 seconds and check authentication status
-    Timer(const Duration(seconds: 3), () async {
+   authCheck();
+  }
+Future<void> authCheck()async{
+    Future.delayed(Duration(seconds: 3),(){
       User? user = FirebaseAuth.instance.currentUser;
       if (user != null) {
-        final AssetController assetController = Get.put(AssetController());
-        await Load().load();
         Get.offAll(() => const HomeScreen()); // Navigate to Home if authenticated
       } else {
         Get.offAll(() => const AuthScreen()); // Navigate to Auth Screen if not authenticated
       }
     });
-  }
-
+}
 
 
   @override

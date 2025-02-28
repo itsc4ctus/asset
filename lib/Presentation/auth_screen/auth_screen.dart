@@ -48,8 +48,8 @@ class AuthScreen extends StatelessWidget {
                     final User user = userCredential.user!;
                     final UserService _userService = UserService();
                     await _userService.createOrUpdateUserDocument(user);
-                    final AssetController assetController = Get.put(AssetController());
-                    await Load().load();
+                    // final AssetController assetController = Get.put(AssetController());
+                    // await Load().load();
                     // Navigate to HomeScreen
                     Get.offAll(() => const HomeScreen());
                     print("Google Sign-In Successful: ${user.displayName}");

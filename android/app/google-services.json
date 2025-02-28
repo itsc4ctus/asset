@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "920543984860",
+    "project_id": "asset-56406",
+    "storage_bucket": "asset-56406.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920543984860:android:6938e58d072861617a0819",
+        "android_client_info": {
+          "package_name": "com.cactus.asset.asset"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "920543984860-qphn9ueb0ib4lnkr00j4a931njd682ho.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cactus.asset.asset",
+            "certificate_hash": "7ba62d121887e23418167b50a2282641cdd1d5f9"
+          }
+        },
+        {
+          "client_id": "920543984860-uk1umaukgh477featds01q03jt0fasf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpEaMm9I_cZCQj_aFVfkaYwBo2tOAPc08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "920543984860-uk1umaukgh477featds01q03jt0fasf4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "920543984860-kbs1j8euubfb9qb8vp25kh3nd3nlfj2a.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cactus.asset.asset"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

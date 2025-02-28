@@ -7,7 +7,7 @@ import 'package:get/get_core/src/get_main.dart';
 class PaidAssetsTab extends StatelessWidget {
  PaidAssetsTab({super.key});
 
-  final AssetController _assetController = Get.find<AssetController>();
+  final AssetController assetController = Get.find<AssetController>();
 
   @override
   Widget build(BuildContext context) {
@@ -15,9 +15,9 @@ class PaidAssetsTab extends StatelessWidget {
       return Padding(
         padding: EdgeInsets.all(AppConstants.paddingSmall(context)),
         child: ListView.separated(
-          itemCount: _assetController.assetsPurchased.length,
+          itemCount: assetController.assetsPurchased.length,
           itemBuilder: (context, index) {
-            return AssetTile(asset: _assetController.assetsPurchased[index]);
+            return AssetTile(asset: assetController.assetsPurchased[index]);
           },
           separatorBuilder: (context, index) => SizedBox(height: 10), // Add spacing
         ),
